@@ -1,0 +1,18 @@
+dependencies:
+    - smartcontractkit/chainlink-brownie-contracts@0.4.0
+    - aave/protocol-v2@1.0.1
+compiler:
+    solc:
+        remappings:
+            - "@chainlink=smartcontractkit/chainlink-brownie-contracts@0.4.0"
+            - "@aave=aave/protocol-v2@1.0.1"
+
+
+networks:
+  kovan:
+    weth_token: "0xd0A1E359811322d97991E03f863a0C30C2cF029C"
+    Lending_Pool_Addresses provider: "0x88757f2f99175387aB4C6a4b3067c77A695b0349"
+  
+
+dotenv: .env
+
